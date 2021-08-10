@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignColors" Version="2.0.1" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.1.0" />
+    <PackageReference Include="PropertyChanged.Fody" Version="3.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IPlugin\IPlugin.csproj" />
+    <ProjectReference Include="..\PluginOne\PluginOne.csproj" />
+    <ProjectReference Include="..\PluginTwo\PluginTwo.csproj" />
+  </ItemGroup>
+
+</Project>
